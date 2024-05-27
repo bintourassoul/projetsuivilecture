@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de suivi de lecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Biblio<span>Gest</span></h1>
+        <nav class="menu">
+               <ul>
+                <li>Accueil</li>
+                <li>Services</li>
+                <li>Contact</li>
+               <li><a href="connecter.html" onclick="retrieveData()">Se connecter</a></li>
+               <li><a href="formuINS.html" onclick="saveData()">S'inscrire</a></li>
+        </nav>
+    </header>
+    <section id="livre">
+        <a href="ajouterlivre.html"> Ajout nouveau livre</a>
+                    <h2>Nos Livres</h2>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                          <div class="card">
+                            <img src="livre1.jpg" id="monImage"   class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" id="nomLivre">Prada</h5>
+                              <p class="card-text" id="AuteurLivre">Catwalk</p>
+                        <button class="btn" id="commande">commander</button>
+                        <div id="message">
+                        <button id="marqueLu">Lu</button>
+                        <button id="marqueNonLu">Non Lu</button>
+                      </div>
+                        <button onclick="supprimerImage ()" id="delete">supprimer</button>
+                        <p id="result"></p>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="OIP (1).jpg" id="Image" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" id="Livre">Graine D'ortie</h5>
+                              <p class="card-text" id="Auteur">Paul Wagner</p>
+                        <button class="btn" id="commander">commander</button>
+                        <div id="messages">
+                          <button id="Lu">Lu</button>
+                          <button id="NonLu">Non Lu</button>
+                        </div>
+                        <button onclick="deleteImage ()" id="delete">supprimer</button>
+                        <p id="result"></p>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="OIP (2).jpg" id="source" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" id="title">Le roman de Salem</h5>
+                              <p class="card-text" id="monNom">Marhin Carnet</p>
+                        <button class="btn" id="comade">commander</button>
+                        <div id="messag">
+                          <button id="Lire">Lu</button>
+                          <button id="NonLire">Non Lu</button>
+                        </div>
+                        <button id="delete" onclick="remove()">supprimer</button>
+                        <p id="result"></p>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="R (1).jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Repose toi sur moi</h5>
+                              <p class="card-text">Serge Joncour</p>
+                        <button class="btn">commander</button>
+                        <div id="message">
+                          <button id="marqueLu">Lu</button>
+                          <button id="marqueNonLu">Non Lu</button>
+                        </div>
+                        <button id="delete">supprimer</button>
+                        <p id="result"></p>
+                      </div>
+                    </div>
+                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+    </section>
+    <script src="index.js"></script>
+    <footer>copyright2024-RD-@production</footer>
+</body>
+</html>
